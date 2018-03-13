@@ -3,14 +3,22 @@
 */
 var Home = {
 
+	blogList : '',
+
 	getDummyData : function () {
-		//load blog data
-		$('body').append("<script src='./dummy/blogList.jsonp'></script>");
+		$.getJSON('./dummy/blogList.json',function (data) {
+			Home.blogList = data.blogList;
+			console.log(Home.blogList);
+			Home.loadList(Home.blogList);
+		})
 	},
 
 	loadList : function(data){
-		console.log('load',data.blogList);
-		$('#main').html(""+data.blogList[0].content);
+		$(data).each(function (item) {
+			console.log(item,this);
+			$('#all-blog-list-content').append(Home._templateBlogItem(this));
+		});
+
 	},
 	
 	
@@ -23,7 +31,32 @@ var Home = {
 		});
 		
 		
+	},
+
+	_templateBlogItem : function (blog) {
+
+		// if(blog.title.length>15){
+		// 	blog.title = '' + blog.title.substr(0,15) + '...';
+		// }
+		
+		return '\
+			<div class="blog-item">\
+				<h3 class="blog-title">'+ blog.title +'</h3>\
+				<p class="blog-brief"> '+ blog.brief +' </p>\
+				<div class="blog-item-bottom">\
+					<div class="bottom-left publish-time">'+ blog.publish_time +'</div>\
+					<div class="bottom-right">\
+						<div class="blog-read-count">\
+							<div class="icon icon-read"></div><span>'+ blog.view +'</span>\
+						</div>\
+					</div>\
+				</div>\
+			</div>\
+			<div class="item-separator"></div>\
+		';
 	}
+
+
 }
 
 Home.init();

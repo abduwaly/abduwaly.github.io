@@ -7,7 +7,9 @@
 	<title>Arsay Kashgari</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src='./js/jquery-1.8.3.min.js'></script>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src='./js/jquery-1.9.1.min.js'></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="htmleaf-container">
@@ -37,8 +39,20 @@
 		</nav>
 		
 	</div>
-	<div id='main' style="width: 100%; height: auto;min-height:100%; line-height: 25px; text-align: center;">
-		Main Content
+	<div id='main'>
+		<div class="container">
+			<div class="col-xs-12 col-sm-8" id="all-blog-list-content">
+				<!-- blog item -->
+				<!-- blog item -->
+				<!-- blog item -->
+			</div>
+			<div class="col-xs-12 col-sm-4" id="left-side-content">
+				<div id="info-card">
+
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<div id='footer'>
 		<div class='copyright'>
@@ -71,7 +85,7 @@
 
 		addListener(document, 'DOMContentLoaded', function () {
 		    
-		    var mq = window.matchMedia("(max-width: 760px)");
+		    var mq = window.matchMedia("(max-width: 768px)");
 		    if (mq.matches) {
 		        document.getElementById("menu_list").classList.add("hidden");
 		    }
@@ -85,7 +99,7 @@
 		                    document.documentElement.clientWidth ||
 		                    document.body.clientWidth;
 		        
-		        if (width > 760) {
+		        if (width > 768) {
 		            document.getElementById("menu_list").classList.remove("hidden");
 		        } else {
 		            document.getElementById("menu_list").classList.add("hidden");
