@@ -163,9 +163,41 @@ nav ul li a:hover {
 }
 #info-card{
     background: white;
-    height: 300px;
+    min-height: 300px;
     width:100%;
 }
+.avatar{
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.info-list{
+    list-style-type: none;
+    text-align: left;
+    color:#6a737d;
+    padding: 5px;
+    font-family: -apple-system,"Segoe UI",Arial,sans-serif;
+}
+.info-list .sm-icon{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    margin-right: 3px;
+    background-size: cover;
+}
+.location .sm-icon{
+    background-image: url(../img/sm-icon-location.png);
+}
+.mail .sm-icon{
+    background-image: url(../img/sm-icon-mail.png);
+}
+.blog .sm-icon{
+    background-image: url(../img/sm-icon-csdn.png);
+}
+.link .sm-icon{
+    background-image: url(../img/sm-icon-link.png);
+}
+
 
 #main .blog-item{
     min-height:150px;
@@ -284,4 +316,9 @@ nav ul li a:hover {
         padding:5px;
     }
 
+}
+@media (max-width: 992px) {
+    #left-side-content{
+        display: none;
+    }
 }

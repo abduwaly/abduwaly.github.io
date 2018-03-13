@@ -32,8 +32,8 @@
 		        
 			<ul id="menu_list">
 				<li class="current_page"><a href="#">Home</a></li>
-				<li><a href="./about.html">About Us</a></li>
-				<li><a href="./contacts.html">Contacts</a></li>
+				<!--<li><a href="./about.html">About Us</a></li>-->
+				<!--<li><a href="./contacts.html">Contacts</a></li>-->
 				<li><a href='./3D-Chemical-Elements.html'>3D Demo</a></li>
 			</ul>
 		</nav>
@@ -48,7 +48,27 @@
 			</div>
 			<div class="col-xs-12 col-sm-4" id="left-side-content">
 				<div id="info-card">
-
+					<img class="avatar" src="./img/avatar.jpg">
+					<h4>Abduwaly Muhammad</h4>
+					<div class="item-separator"></div>
+					<ul class='info-list'>
+						<li class='location'>
+							<div class="sm-icon "></div>
+							<span>Earth, Universe</span>
+						</li>
+						<li class='mail'>
+							<div class="sm-icon "></div>
+							<span>arsay@foxmail.com</span>
+						</li>
+						<li class='blog'>
+							<div class="sm-icon "></div>
+							<span>http://blog.csdn.net/arsaycode/</span>
+						</li>
+						<li class='link'>
+							<div class="sm-icon "></div>
+							<span>https://abduwaly.github.io/</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -56,7 +76,7 @@
 	</div>
 	<div id='footer'>
 		<div class='copyright'>
-			<span> © 2018 <strong>Abduwaly Muhammad</strong> </span>
+			<span> © 2018 made by <strong>Abduwaly Muhammad</strong> </span>
 			<ul class='link-list'>
 				<li class='github'>
 					<a href='https://github.com/abduwaly' target="_blank"></a>
@@ -104,6 +124,13 @@
 		        } else {
 		            document.getElementById("menu_list").classList.add("hidden");
 		        }
+				if(width < 992){
+					document.getElementById("all-blog-list-content").classList.remove('col-sm-8');
+					document.getElementById("all-blog-list-content").classList.add('col-sm-12');
+				}else{
+					document.getElementById("all-blog-list-content").classList.remove('col-sm-12');
+					document.getElementById("all-blog-list-content").classList.add('col-sm-8');
+				}
 		    });
 		    
 		});
