@@ -8,7 +8,7 @@ body {
 
 @font-face {
     font-family: "clock-font";
-    src: url(../font/clock-font/LCD-BOLD.ttf);
+    src: url(../font/clock-font/LCD-BOLD.ttf) format('truetype');
 }
 .clearfix {
     clear: both;
