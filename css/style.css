@@ -6,6 +6,10 @@ body {
 	height:100%;
 }
 
+@font-face {
+    font-family: "clock-font";
+    src: url(../font/clock-font/LCD-BOLD.ttf);
+}
 .clearfix {
     clear: both;
 }
@@ -160,11 +164,29 @@ nav ul li a:hover {
 
 #left-side-content{
     min-height: 300px;
+    padding-left:30px;
 }
 #info-card{
     background: white;
     min-height: 300px;
     width:100%;
+}
+#clock-card{
+    background: white;
+    height: 400px;
+    width:100%;
+    padding: 20px 0;
+}
+#digital-clock{
+    height: 70px;
+    width: 240px;
+    background: #edf0f1;
+    margin: 10px auto;
+    line-height: 70px;
+    font-size: 42px;
+    color: #0d860d;
+    font-family: 'clock-font';
+    border: 3px solid;
 }
 .avatar{
     height: 150px;
