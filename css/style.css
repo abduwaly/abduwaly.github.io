@@ -17,20 +17,29 @@ body {
 .htmleaf-header{
 	width: 100%;
     height: 120px;
-    /*background-image: url(../img/nav-bg3.jpg);*/
-    background-position-x: center;  
     background-color: #0d1225;
     color: white;
 }
 .htmleaf-header .big-title{
 	display: inline-block;
     line-height: 120px;
-    font-size: 3em;
+    font-size: 2.5em;
     padding-left: .5em;
 	font-weight: bold;
     text-shadow: 3px 3px 2px blue;
 }
-
+.black-board{
+    display: inline-block;
+    float: right;
+    width: 400px;
+    height: 100px;
+    margin: 10px 30px 10px 10px;
+}
+.black-board img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 nav {
     font-family: Helvetica;
     text-align: left;

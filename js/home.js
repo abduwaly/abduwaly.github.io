@@ -20,6 +20,18 @@ var Home = {
 		});
 
 	},
+
+	swipe : function () {
+		var bgImgs = ['k1.jpg','k2.jpg','k3.jpg','k4.jpg'];
+		setInterval(function () {
+			$('.black-board img').attr('src','./img/'+Home.loopNext(bgImgs));
+		},3000);
+	},
+
+	loopNext : function (arr) {
+		arr.push(arr.shift());
+		return arr[0];
+	},
 	
 	
 	init : function(){
@@ -27,6 +39,7 @@ var Home = {
 		$(document).ready(function(){
 			
 			Home.getDummyData();
+			Home.swipe();
 			
 		});
 		
