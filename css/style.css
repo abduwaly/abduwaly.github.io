@@ -244,6 +244,10 @@ nav ul li a:hover {
 }
 h3.blog-title a{
     text-decoration: none;
+    transition: padding-left .3s, color .3s;
+}
+h3.blog-title a:hover{
+    padding-left: 20px;
 }
 .item-separator{
     width: 100%;
