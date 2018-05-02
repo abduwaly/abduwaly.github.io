@@ -650,7 +650,7 @@ section {
 .experience-project-name {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0 5px 0;
+  margin: 10px 0 5px 10px;
 }
 .experience-task {
   padding-left: 0;
