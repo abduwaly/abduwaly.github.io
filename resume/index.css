@@ -911,7 +911,7 @@ header,
     box-shadow: none;
   }
   body {
-    /*background: transparent;*/
+    background: transparent;
   }
   aside,
   footer {
