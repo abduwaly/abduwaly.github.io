@@ -779,6 +779,10 @@ aside {
   top: 50%;
   transform: translate(0, -50%);
 }
+.mo_divider{
+  display: none;
+}
+
 @media (max-width: 767px) {
   aside {
     position: relative;
@@ -789,6 +793,10 @@ aside {
     transform: none;
     overflow-y: hidden;
     zoom: 1;
+  }
+  .mo_divider{
+    display: block;
+    border-width: 0.5px;
   }
 }
 aside .links {
