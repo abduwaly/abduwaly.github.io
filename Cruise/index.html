@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Cruise</title>
+    <link href="./assets/font-icons/fonts.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="header">
+    <div class="header-content">
+        <img class="logo" src="./assets/logo/logo.svg">
+        <div id="user-avatar" class="avatar-wrapper">
+            <img class="avatar" src="./assets/avatar.png">
+            <i id="angle-down" class="icon-angle-down"></i>
+            <i id="angle-up" class="icon-angle-up"></i>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="sidebar">
+        <!-- menu -->
+        <div class="side-menu">
+            <ul class="menu-list">
+                <li><i class="icon-dashboard"></i>DASHBOARD</li>
+                <li class="selected"><i class="icon-sitemap"></i>AGENT</li>
+                <li><i class="icon-boat"></i>MY CRUISE</li>
+                <li><i class="icon-life-bouy"></i>HELP</li>
+            </ul>
+        </div>
+
+        <!-- History list -->
+        <div class="history">
+            <p class="history-title">History</p>
+            <ul>
+                <li class="history-item">bjstdmngbgr01/Accenptence_test</li>
+                <li class="history-item">bjstdmngbgr02/Accenptence_test</li>
+                <li class="history-item">bjstdmngbgr03/Accenptence_test</li>
+                <li class="history-item">bjstdmngbgr04/Accenptence_test</li>
+                <li class="history-item">bjstdmngbgr05/Accenptence_test</li>
+                <li class="history-item">bjstdmngbgr06/Accenptence_test</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <!-- 3 cards top -->
+        <div class="card-row">
+            <div class="card building">
+                <span class="card-title">Building</span>
+                <i class="icon-cog"></i>
+                <span class="count">3</span>
+            </div>
+            <div class="card idle">
+                <span class="card-title">Idle</span>
+                <i class="icon-coffee"></i>
+                <span class="count">5</span>
+            </div>
+            <div class="card statistics">
+                <div class="s-item">
+                    <p class="item-title">ALL</p>
+                    <p class="item-count">8</p>
+                </div>
+                <div class="s-item">
+                    <p class="item-title">PHYSICAL</p>
+                    <p class="item-count">4</p>
+                </div>
+                <div class="s-item">
+                    <p class="item-title">VIRTUAL</p>
+                    <p class="item-count">4</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- filter bar -->
+        <div class="filter-bar">
+            <div class="filter-item">
+                <span class="filter-title selected">All</span>
+                <span class="filter-title">Physical</span>
+                <span class="filter-title">Virtual</span>
+            </div>
+            <div class="filter-item search-item">
+                <input/>
+                <i class="icon-search"></i>
+            </div>
+            <div class="filter-item show-style">
+                <i class="icon-th-card"></i>
+                <i class="icon-th-list selected"></i>
+            </div>
+        </div>
+
+        <!-- app list -->
+        <div class="app-list">
+
+            <!-- item -->
+            <div class="app-item">
+                <img class="os-img" src="./assets/os-icons/windows.png">
+                <div class="first-line">
+                    <i class="icon-desktop"></i><span class="app-name">bjstdmngbgr01.thoughtworks.com</span>
+                    <span class="app-tag tag-idle">idle</span>
+                    <i class="icon-info"></i><span class="app-info">192.168.1.243</span>
+                    <i class="icon-folder"></i><span class="app-info">/var/lib/cruise-agent</span>
+                </div>
+                <div class="second-line">
+                    <i class="icon-plus"></i>
+                    <ul class="env-list">
+                        <li class="env-item">
+                            <span class="env-name">FireFox <i class="icon-trash"></i></span>
+                        </li>
+                        <li class="env-item">
+                            <span class="env-name">Safari <i class="icon-trash"></i></span>
+                        </li>
+                        <li class="env-item">
+                            <span class="env-name">Ubuntu <i class="icon-trash"></i></span>
+                        </li>
+                        <!--<li class="env-item">-->
+                        <!--<span class="env-name">Chrome <i class="icon-trash"></i></span>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- item -->
+            <div class="app-item">
+                <img class="os-img" src="./assets/os-icons/ubuntu.png">
+                <div class="first-line">
+                    <i class="icon-desktop"></i><span class="app-name">bjstdmngbgr02.thoughtworks.com</span>
+                    <span class="app-tag tag-building">building</span>
+                    <i class="icon-info"></i><span class="app-info">192.168.1.243</span>
+                    <i class="icon-folder"></i><span class="app-info">/var/lib/cruise-agent</span>
+                </div>
+                <div class="second-line">
+                    <i class="icon-plus"></i>
+                    <ul class="env-list">
+                        <li class="env-item">
+                            <span class="env-name">FireFox <i class="icon-trash"></i></span>
+                        </li>
+                        <li class="env-item">
+                            <span class="env-name">Safari <i class="icon-trash"></i></span>
+                        </li>
+                        <li class="env-item">
+                            <span class="env-name">Ubuntu <i class="icon-trash"></i></span>
+                        </li>
+                        <li class="env-item">
+                            <span class="env-name">Chrome <i class="icon-trash"></i></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="action-btns">
+                    <button class="deny-btn"><i class="icon-deny"></i>Deny</button>
+                </div>
+            </div>
+
+            <!-- item -->
+            <div class="app-item">
+                <img class="os-img" src="./assets/os-icons/cent_os.png">
+                <div class="first-line">
+                    <i class="icon-desktop"></i><span class="app-name">bjstdmngbgr03.thoughtworks.com</span>
+                    <span class="app-tag tag-building">building</span>
+                    <i class="icon-info"></i><span class="app-info">192.168.1.243</span>
+                    <i class="icon-folder"></i><span class="app-info">/var/lib/cruise-agent</span>
+                </div>
+                <div class="second-line">
+                    <i class="icon-plus"></i>
+                    <ul class="env-list">
+                        <li class="env-item">
+                            <span class="env-name">FireFox <i class="icon-trash"></i></span>
+                        </li>
+                        <!--<li class="env-item">-->
+                        <!--<span class="env-name">Safari <i class="icon-trash"></i></span>-->
+                        <!--</li>-->
+                        <!--<li class="env-item">-->
+                        <!--<span class="env-name">Ubuntu <i class="icon-trash"></i></span>-->
+                        <!--</li>-->
+                        <!--<li class="env-item">-->
+                        <!--<span class="env-name">Chrome <i class="icon-trash"></i></span>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+                <div class="action-btns">
+                    <button class="deny-btn"><i class="icon-deny"></i>Deny</button>
+                </div>
+            </div>
+
+            <!-- item -->
+            <div class="app-item">
+                <img class="os-img" src="./assets/os-icons/debin.png">
+                <div class="first-line">
+                    <i class="icon-desktop"></i><span class="app-name">bjstdmngbgr04.thoughtworks.com</span>
+                    <span class="app-tag tag-building">building</span>
+                    <i class="icon-info"></i><span class="app-info">192.168.1.243</span>
+                    <i class="icon-folder"></i><span class="app-info">/var/lib/cruise-agent</span>
+                </div>
+                <div class="second-line">
+                    <i class="icon-plus"></i>
+                    <ul class="env-list">
+                        <li class="env-item">
+                            <span class="env-name">FireFox <i class="icon-trash"></i></span>
+                        </li>
+                        <!--<li class="env-item">-->
+                        <!--<span class="env-name">Safari <i class="icon-trash"></i></span>-->
+                        <!--</li>-->
+                        <!--<li class="env-item">-->
+                        <!--<span class="env-name">Ubuntu <i class="icon-trash"></i></span>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+                <div class="action-btns">
+                    <button class="deny-btn"><i class="icon-deny"></i>Deny</button>
+                </div>
+            </div>
+
+            <!-- item -->
+            <div class="app-item">
+                <img class="os-img" src="./assets/os-icons/suse.png">
+                <div class="first-line">
+                    <i class="icon-desktop"></i><span class="app-name">bjstdmngbgr05.thoughtworks.com</span>
+                    <span class="app-tag tag-idle">idle</span>
+                    <i class="icon-info"></i><span class="app-info">192.168.1.24</span>
+                    <i class="icon-folder"></i><span class="app-info">/var/lib/cruise-agent</span>
+                </div>
+                <div class="second-line">
+                    <i class="icon-plus"></i>
+                    <ul class="env-list">
+                        <li class="env-item">
+                            <span class="env-name">FireFox <i class="icon-trash"></i></span>
+                        </li>
+                        <li class="env-item">
+                            <span class="env-name">Safari <i class="icon-trash"></i></span>
+                        </li>
+                        <li class="env-item">
+                            <span class="env-name">Ubuntu <i class="icon-trash"></i></span>
+                        </li>
+                        <li class="env-item">
+                            <span class="env-name">Chrome <i class="icon-trash"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="footer">
+    <span class="copyright">© Copyright 2017 <strong>Thought</strong>Works</span>
+</div>
+<div id="modal">
+    <!-- up pointer -->
+    <div class="point-up up-angle1"></div>
+    <div class="point-up up-angle2"></div>
+    <!-- down pointer -->
+    <div class="point-down down-angle1"></div>
+    <div class="point-down down-angle2"></div>
+
+    <section class="input-section">
+        <p class="modal-tips">Separate multiple resource name with commas</p>
+        <input id="input-resources">
+        <i class="icon-close" id="modal-close-icon"></i>
+    </section>
+    <section class="btn-section">
+        <button id="add-res-btn">Add Resources</button>
+        <button id="cancel-btn">Cancel</button>
+    </section>
+</div>
+<div id="dropdown">
+    <ul class="user-menu">
+        <li><i class="icon-id-card"></i>Profile</li>
+        <li><i class="icon-sign-in"></i>Sign Out</li>
+    </ul>
+</div>
+</body>
+<script src="bundle.js"></script>
+</html>
