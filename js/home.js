@@ -54,7 +54,7 @@ var Home = {
 		
 		return '\
 			<div class="blog-item" data-blogId="'+ blog.id +'">\
-				<h3 class="blog-title"><a href=`#${blog.id}`>'+ blog.title +'</a></h3>\
+				<h3 class="blog-title"><a href="#'+ blog.id +'">'+ blog.title +'</a></h3>\
 				<p class="blog-brief"> '+ blog.brief +' </p>\
 				<div class="blog-item-bottom">\
 					<div class="bottom-left publish-time">'+ blog.publish_time +'</div>\
