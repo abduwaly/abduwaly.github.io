@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<title>HTML5 3D效果 | CSS3 动画</title>
+<title>HTML5 3D Animation</title>
 <style>
 html, body {
 	height: 100%;
@@ -89,6 +89,8 @@ button {
 	border: 0px;
 	padding: 5px 10px;
 	cursor: pointer;
+
+    opacity: 0;
 }
 button:hover {
 	background-color: rgba(0,255,255,0.5);
@@ -106,14 +108,14 @@ button:active {
 <script src="js/CSS3DRenderer.js" ></script>
 
 <div id="container"></div>
-<div id="info">超炫的HTML5 3D效果</div>
+<div id="info"></div>
 <div id="menu">
-<button id="table">表面</button>
-<button id="sphere">球体</button>
-<button id="helix">螺旋</button>
-<button id="grid">网格</button>
+<button id="table">Table</button>
+<button id="sphere">Sphere</button>
+<button id="helix">Helix</button>
+<button id="grid">Grid</button>
 </div>
-<div style="display: none;">更多HTML5 CSS动画请访问 <a href="http://www.5iweb.com.cn">网页特效库</a>.</div>
+
 <script>
 
 var table = [
@@ -404,6 +406,8 @@ function init() {
 
 	window.addEventListener( 'resize', onWindowResize, false );
 
+    setInterval( () => randomClick(['table', 'sphere', 'helix', 'grid']) ,10000);
+
 }
 
 function transform( targets, duration ) {
@@ -459,6 +463,11 @@ function render() {
 
 	renderer.render( scene, camera );
 
+}
+
+function randomClick(arr) {
+    const eleIndex = Math.floor(Math.random() * arr.length);
+    document.getElementById(arr[eleIndex]).click();
 }
 
 </script>
